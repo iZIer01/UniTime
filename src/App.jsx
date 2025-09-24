@@ -1,11 +1,11 @@
 import React from 'react'
-import Login from "./Components/Login"
 import Dashboard from './Components/Dashboard'
+import TimeTablerMenu from './Components/TimeTablerMenu'
 
 export const App = () => {
   return (
     <>
-      <Dashboard/>
+      <TimeTablerMenu/>
     </>
   )
 }
