@@ -1,11 +1,11 @@
 :root{
   --primaryColor:#1a2c5e;
-  --primaryColor2:#1a2c5ed8;
+  --primaryColor2:#294183;
   --secondaryColor:#ffae17;
   --secondaryColor2:#ffae17c6;
   --accentColor:#da2127;
-  --accentColor2:#cea04d;
-  --textColor:#fcfbf9;
+  --accentColor2:#5b83f1;
+  --textColor:#fcfbf9f2;
   --textColor2:#0a0a0a;
 }
 
@@ -13,4 +13,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Pontano Sans","Roboto", sans-serif;
+
 }

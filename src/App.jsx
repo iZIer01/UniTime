@@ -1,12 +1,15 @@
 import React from 'react'
+
 import Dashboard from './Components/Dashboard'
 import TimeTablerMenu from './Components/TimeTablerMenu'
 import Login from './Components/login'
+import TimeTablerHeader from './Components/TimeTablerHeader'
+
 
 export const App = () => {
   return (
     <>
-      <Login/> 
+      <TimeTablerHeader/>       
     </>
   )
 }
