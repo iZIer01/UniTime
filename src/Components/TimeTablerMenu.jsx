@@ -97,7 +97,7 @@ const TimeTablerMenu = () => {
                       {showAdvanceMenu ? <HiArrowTurnDownLeft /> : <RiAdminLine />}
                     </span>
                     <span className="btnText">
-                      {showAdvanceMenu ? "Back" : "System Management"}
+                      {showAdvanceMenu ?  "System Management" : "Back"}
                     </span>
                   </button>
 

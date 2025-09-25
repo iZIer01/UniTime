@@ -4,12 +4,12 @@ import Dashboard from './Components/Dashboard'
 import TimeTablerMenu from './Components/TimeTablerMenu'
 import Login from './Components/login'
 import TimeTablerHeader from './Components/TimeTablerHeader'
-
+import TimeTable from './Components/Page/TimeTable'
 
 export const App = () => {
   return (
     <>
-      <TimeTablerHeader/>       
+      <TimeTable/>
     </>
   )
 }

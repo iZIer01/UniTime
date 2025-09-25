@@ -1,10 +1,17 @@
-import React from 'react'
-import styles from 
+import React from 'react';
+
+import TimeTablerMenu from '../TimeTablerMenu'; 
+import TimeTablerHeader from '../TimeTablerHeader';
+
+import styles from "../Style/TimeTable.module.css"; 
 
 const TimeTable = () => {
   return (
-    <div classname={styles.TimeTable}></div>
-  )
-}
+    <section className={styles.TimeTable}> 
+      <TimeTablerMenu />
+      <TimeTablerHeader/>  
+    </section>
+  );
+};
 
-export default TimeTable
+export default TimeTable;
