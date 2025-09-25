@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import "./Style/Login.css";
+import { useNavigate } from "react-router-dom";
+
+  /*I'm  moving to using css module  */
+import styles from "./Style/Login.module.css"
 
 import NUST from "../assets/Image/NUST-logo.png";
 import UniTime from "../assets/Image/unitime-logo.png";
@@ -28,41 +31,42 @@ function Login() {
 
       if (response.ok) {
         alert("Login successful!");
-        window.location.href = "/dashboard";
+        navigate("/dashboard");
       } else {
         setError("Invalid username or password");
       }
-    } catch (err) {
-      console.error(err);
+    } catch (error) {
+      console.error(error);
       setError("Could not connect to UniTime backend.");
     }
   };
 
   return (
-    <form className="LoginContainer" onSubmit={handleSubmit}>
+    <form className={styles.LoginContainer} onSubmit={handleSubmit}>
       {/* Image section */}
-      <div className="imgSection">
-        <div className="iconContainer">
-          <div className="imgBody">
+      <div className={styles.imgSection}>
+        <div className={styles.iconContainer}>
+          <div className={styles.imgBody}>
             <img src={NUST} alt="NUST Logo" />
           </div>
           <hr />
-          <div className="imgBody">
+          <div className={styles.imgBody}>
             <img src={UniTime} alt="UniTime Logo" />
           </div>
         </div>
 
-        <div className="mainImage">
-          <div className="imgBody2">
+        <div className={styles.mainImage}>
+          <div className={styles.imgBody2}>
             <img src="#" alt="Library" />
           </div>
         </div>
       </div>
 
       {/* Login section */}
-      <div className="loginSection">
+      <div className={styles.loginSection}>
         <h1>Login</h1>
         <input
+          id="username"
           type="text"
           placeholder="Enter Username"
           required
@@ -71,6 +75,7 @@ function Login() {
         />
 
         <input
+          id="password"
           type="password"
           placeholder="Enter Password"
           required
